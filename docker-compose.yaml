@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  ## kill port => sudo kill -9 `sudo lsof -t -i:8000`
+  #######################################
+  # PHP application Docker container
+  #
+  # for this container you have to remove
+  # following entries from .dockerignore
+  #
+  # etc/*
+  # provision/*
+  # app/*
+  #
+  #######################################
+
+
+  java:
+    container_name: java
+    build:
+      dockerfile: Dockerfile
+    env_file:
+      - docker/java/env/environment.yml
+
+#  docker build -t workmotion/app .
