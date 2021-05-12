@@ -27,6 +27,18 @@ After running this piece of code we shall see the spring boot starter window run
 
 - Now it should be started.
 
+
+## Note 
+You can use an OpenApi Contact using Swagger via this link
+
+http://localhost:8080/swagger-ui.html
+
+Skip the following guide if you will use swagger .
+
+-------------- 
+
+If not ,
+
 ## Now , Let's Continue testing our app via rest api
 
 I attached a collection file of postman to be able to check all call requests , it is located in the project root path.
