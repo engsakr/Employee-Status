@@ -2,6 +2,10 @@ package com.workmotion.employee.controllers.api;
 
 import com.workmotion.employee.models.Employee;
 import com.workmotion.employee.services.EmployeeService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiResponse;
+import io.swagger.annotations.ApiResponses;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -9,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Api(value = "EmployeeController", description = "It is a REST APIs related to Employee Entity!!!!")
 @RestController
 @RequestMapping("/api")
 public class EmployeeController {
@@ -81,7 +86,7 @@ public class EmployeeController {
      * a method that get all employees
      */
     @DeleteMapping("/employees/{id}")
-    private void deleteMovie(@PathVariable("id") int id) {
+    private void deleteEmployee(@PathVariable("id") int id) {
         employeeService.delete(id);
     }
 
