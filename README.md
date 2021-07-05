@@ -1,5 +1,5 @@
-# WorkMotion
-WorkMotion Test Task
+# EmployeeStatus
+EmployeeStatus Test Task
 
 The Following is easy installation & setup guide to start the demo app .
 
@@ -14,14 +14,14 @@ The Following is easy installation & setup guide to start the demo app .
 - let's make our build to run it later via the following docker command.
 
 ``` bash
-docker build -t WorkMotion/app .
+docker build -t EmployeeStatus/app .
 ```
 
 ## Run
 
 -Now lets run our build via the following docker command.
 ```bash
-docker run -p 8080:8080 WorkMotion/app
+docker run -p 8080:8080 EmployeeStatus/app
 ```
 After running this piece of code we shall see the spring boot starter window running:
 
